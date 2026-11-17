@@ -1,0 +1,790 @@
+/*==================================================
+ANIMATION SETTINGS
+==================================================*/
+
+:root{
+
+--animation-fast:.30s;
+--animation-normal:.45s;
+--animation-slow:.80s;
+--animation-curve:cubic-bezier(.4,0,.2,1);
+
+}
+
+/*==================================================
+TRANSITIONS
+==================================================*/
+
+a,
+button,
+.btn,
+.btn-outline,
+.order-btn,
+.filter-btn,
+.featured-card,
+.menu-card,
+.chef-card,
+.why-card,
+.testimonial-card,
+.gallery-item,
+.contact-card,
+.footer-social a,
+.chef-social a,
+img{
+
+transition:
+
+transform var(--animation-normal) var(--animation-curve),
+background var(--animation-fast),
+color var(--animation-fast),
+border-color var(--animation-fast),
+box-shadow var(--animation-normal);
+
+}
+
+/*==================================================
+FADE IN
+==================================================*/
+
+.fade-in{
+
+animation:fadeIn .8s ease forwards;
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+/*==================================================
+FADE UP
+==================================================*/
+
+.fade-up{
+
+animation:fadeUp .9s ease forwards;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(45px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/*==================================================
+FADE DOWN
+==================================================*/
+
+.fade-down{
+
+animation:fadeDown .9s ease forwards;
+
+}
+
+@keyframes fadeDown{
+
+from{
+
+opacity:0;
+
+transform:translateY(-45px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/*==================================================
+FADE LEFT
+==================================================*/
+
+.fade-left{
+
+animation:fadeLeft .9s ease forwards;
+
+}
+
+@keyframes fadeLeft{
+
+from{
+
+opacity:0;
+
+transform:translateX(-50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+/*==================================================
+FADE RIGHT
+==================================================*/
+
+.fade-right{
+
+animation:fadeRight .9s ease forwards;
+
+}
+
+@keyframes fadeRight{
+
+from{
+
+opacity:0;
+
+transform:translateX(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+/*==================================================
+ZOOM IN
+==================================================*/
+
+.zoom-in{
+
+animation:zoomIn .8s ease forwards;
+
+}
+
+@keyframes zoomIn{
+
+from{
+
+opacity:0;
+
+transform:scale(.85);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+/*==================================================
+ZOOM OUT
+==================================================*/
+
+.zoom-out{
+
+animation:zoomOut .8s ease forwards;
+
+}
+
+@keyframes zoomOut{
+
+from{
+
+opacity:0;
+
+transform:scale(1.15);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+/*==================================================
+FLOAT
+==================================================*/
+
+.float{
+
+animation:float 5s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/*==================================================
+PULSE
+==================================================*/
+
+.pulse{
+
+animation:pulse 2.5s ease infinite;
+
+}
+
+@keyframes pulse{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.05);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+/*==================================================
+ROTATE
+==================================================*/
+
+.rotate{
+
+animation:rotate 10s linear infinite;
+
+}
+
+@keyframes rotate{
+
+from{
+
+transform:rotate(0deg);
+
+}
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+/*==================================================
+BOUNCE
+==================================================*/
+
+.bounce{
+
+animation:bounce 2s infinite;
+
+}
+
+@keyframes bounce{
+
+0%,
+100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+}
+
+/*==================================================
+LOADER
+==================================================*/
+
+.loader-logo{
+
+animation:loaderAnimation 1.6s ease-in-out infinite alternate;
+
+}
+
+@keyframes loaderAnimation{
+
+from{
+
+opacity:.4;
+
+letter-spacing:3px;
+
+transform:scale(.98);
+
+}
+
+to{
+
+opacity:1;
+
+letter-spacing:8px;
+
+transform:scale(1.03);
+
+}
+
+}
+
+/*==================================================
+HERO TITLE
+==================================================*/
+
+.hero-content h1{
+
+animation:heroTitle 1.2s ease forwards;
+
+}
+
+@keyframes heroTitle{
+
+from{
+
+opacity:0;
+
+transform:translateY(60px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.hero-content h2{
+
+animation:heroSubtitle 1.4s ease forwards;
+
+}
+
+@keyframes heroSubtitle{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.hero-content p{
+
+animation:heroText 1.6s ease forwards;
+
+}
+
+@keyframes heroText{
+
+from{
+
+opacity:0;
+
+transform:translateY(25px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+/*==================================================
+BUTTON SHINE
+==================================================*/
+
+.btn,
+.btn-outline,
+.order-btn{
+
+position:relative;
+
+overflow:hidden;
+
+isolation:isolate;
+
+}
+
+.btn::before,
+.btn-outline::before,
+.order-btn::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-130%;
+
+width:70%;
+
+height:100%;
+
+background:linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.45),
+transparent
+);
+
+transform:skewX(-25deg);
+
+transition:left .8s ease;
+
+z-index:-1;
+
+}
+
+.btn:hover::before,
+.btn-outline:hover::before,
+.order-btn:hover::before{
+
+left:150%;
+
+}
+
+/*==================================================
+CARD HOVER
+==================================================*/
+
+.featured-card:hover,
+.menu-card:hover,
+.chef-card:hover,
+.why-card:hover,
+.testimonial-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 22px 45px rgba(0,0,0,.30);
+
+}
+
+/*==================================================
+IMAGE HOVER
+==================================================*/
+
+.featured-image,
+.menu-image,
+.gallery-item,
+.chef-card{
+
+overflow:hidden;
+
+}
+
+.featured-image img,
+.menu-image img,
+.gallery-item img,
+.chef-card img{
+
+will-change:transform;
+
+}
+
+.featured-card:hover img,
+.menu-card:hover img,
+.gallery-item:hover img,
+.chef-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+/*==================================================
+SOCIAL ICONS
+==================================================*/
+
+.footer-social a:hover,
+.chef-social a:hover{
+
+transform:translateY(-5px) rotate(8deg);
+
+}
+
+/*==================================================
+FILTER BUTTON
+==================================================*/
+
+.filter-btn:hover{
+
+transform:translateY(-4px);
+
+}
+
+/*==================================================
+NAVIGATION
+==================================================*/
+
+nav ul li a{
+
+position:relative;
+
+}
+
+nav ul li a:hover{
+
+letter-spacing:.5px;
+
+}
+
+/*==================================================
+SCROLL BUTTON
+==================================================*/
+
+#topBtn{
+
+animation:scrollButton 2.2s ease-in-out infinite;
+
+}
+
+@keyframes scrollButton{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/*==================================================
+GALLERY LIGHT EFFECT
+==================================================*/
+
+.gallery-item{
+
+position:relative;
+
+}
+
+.gallery-item::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-140%;
+
+width:45%;
+
+height:100%;
+
+background:linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.35),
+
+transparent
+
+);
+
+transform:skewX(-25deg);
+
+transition:left .9s ease;
+
+pointer-events:none;
+
+z-index:2;
+
+}
+
+.gallery-item:hover::before{
+
+left:160%;
+
+}
+
+/*==================================================
+INPUT EFFECT
+==================================================*/
+
+input:focus,
+textarea:focus,
+select:focus{
+
+box-shadow:
+
+0 0 0 3px rgba(212,175,55,.12),
+0 0 18px rgba(212,175,55,.25);
+
+}
+
+/*==================================================
+FOOTER LINKS
+==================================================*/
+
+.footer-column ul li{
+
+transition:transform .35s ease;
+
+}
+
+.footer-column ul li:hover{
+
+transform:translateX(8px);
+
+}
+
+/*==================================================
+AOS
+==================================================*/
+
+[data-aos]{
+
+will-change:transform,opacity;
+
+transition-duration:900ms !important;
+
+}
+
+/*==================================================
+GPU ACCELERATION
+==================================================*/
+
+.featured-card,
+.menu-card,
+.chef-card,
+.gallery-item,
+.testimonial-card,
+.why-card,
+.contact-card,
+.btn,
+.btn-outline{
+
+transform:translateZ(0);
+
+backface-visibility:hidden;
+
+}
+
+/*==================================================
+REDUCED MOTION
+==================================================*/
+
+@media (prefers-reduced-motion:reduce){
+
+*,
+*::before,
+*::after{
+
+animation:none !important;
+
+transition:none !important;
+
+scroll-behavior:auto !important;
+
+}
+
+}
+
+/*==================================================
+END OF FILE
+==================================================*/
